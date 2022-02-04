@@ -1,4 +1,4 @@
-.app {
+.container {
   min-height: 300vh;
   text-align: center;
   background-color: white;
@@ -9,7 +9,27 @@
 }
 
 @media (min-width: 600px) {
-  .app {
+  .container {
     min-height: 200vh;
   }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}
+
+.link img {
+  width: 32px;
+}
+
+.link span {
+  margin-left: 1em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
 }

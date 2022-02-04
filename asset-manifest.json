@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-flicker-scroll/static/css/main.6be8afaf.css",
-    "main.js": "/react-flicker-scroll/static/js/main.44910c83.js",
+    "main.css": "/react-flicker-scroll/static/css/main.2c5bfeb4.css",
+    "main.js": "/react-flicker-scroll/static/js/main.199ecdd7.js",
     "static/media/node.png": "/react-flicker-scroll/static/media/node.545e37c8f1d3857f482e.png",
     "static/media/git.png": "/react-flicker-scroll/static/media/git.1ab3caa3101c9c9a49b5.png",
     "static/media/react.png": "/react-flicker-scroll/static/media/react.d9f96f66923149655901.png",
     "static/media/github.png": "/react-flicker-scroll/static/media/github.c8007a9fb185cb152ee6.png",
     "index.html": "/react-flicker-scroll/index.html",
-    "main.6be8afaf.css.map": "/react-flicker-scroll/static/css/main.6be8afaf.css.map",
-    "main.44910c83.js.map": "/react-flicker-scroll/static/js/main.44910c83.js.map"
+    "main.2c5bfeb4.css.map": "/react-flicker-scroll/static/css/main.2c5bfeb4.css.map",
+    "main.199ecdd7.js.map": "/react-flicker-scroll/static/js/main.199ecdd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.6be8afaf.css",
-    "static/js/main.44910c83.js"
+    "static/css/main.2c5bfeb4.css",
+    "static/js/main.199ecdd7.js"
   ]
 }

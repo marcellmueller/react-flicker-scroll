@@ -1,6 +1,6 @@
 {
   "name": "react-flicker-scroll",
-  "version": "0.12.0",
+  "version": "1.0.1",
   "private": false,
   "main": "dist/index.js",
   "homepage": "https://marcellmueller.github.io/react-flicker-scroll",

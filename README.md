@@ -23,6 +23,8 @@ You can technically put any type children inside the `FlickerScroll` component t
 
 `onFlickerOn` and `onFlickerOff` props take a function that runs as the component scroll in and out of the center of the viewport.
 
+`stayActive` prop accepts a boolean value and will keep the active state regardless of scroll position when true.
+
 ```javascript
 import { FlickerScroll } from '../components';
 import styles from './Basic.module.css';
@@ -50,6 +52,7 @@ const Example = () => {
             className={styles.flicker}
             onFlickerOn={() => console.log('flicker on')}
             onFlickerOff={() => console.log('flicker off')}
+            stayActive={line === 'React'}
           >
             {line}
           </FlickerScroll>

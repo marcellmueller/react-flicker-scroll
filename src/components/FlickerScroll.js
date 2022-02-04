@@ -6,12 +6,15 @@ const FlickerScroll = ({
   children,
   onFlickerOn,
   onFlickerOff,
+  stayActive,
   ...props
 }) => {
   const ref = useRef();
   const [active, setActive] = useState(false);
 
   const defaultActive = { color: 'blue' };
+  const isActive = active || stayActive;
+  const styles = activeStyles || defaultActive;
 
   useEffect(() => {
     if (!ref.current) {
@@ -42,13 +45,7 @@ const FlickerScroll = ({
   }, [ref, active, onFlickerOn, onFlickerOff]);
 
   return (
-    <div
-      ref={ref}
-      style={
-        active && activeStyles ? activeStyles : active ? defaultActive : null
-      }
-      {...props}
-    >
+    <div ref={ref} style={isActive ? styles : null} {...props}>
       {children}
     </div>
   );

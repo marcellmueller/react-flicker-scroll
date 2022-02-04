@@ -37,9 +37,9 @@ const text = [
   'Mueller',
 ];
 
-const Basic = () => {
+const Example = () => {
   return (
-    <div className={styles.container}>
+    <div>
       {text.map((line, i) => {
         return (
           <FlickerScroll
@@ -58,9 +58,6 @@ const Basic = () => {
     </div>
   );
 };
-
-export default Basic;
-
 
 export default Example;
 ```

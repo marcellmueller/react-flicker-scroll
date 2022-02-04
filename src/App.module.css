@@ -1,8 +1,15 @@
 .app {
+  min-height: 300vh;
   text-align: center;
-  min-height: 170vh;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .app {
+    min-height: 200vh;
+  }
 }

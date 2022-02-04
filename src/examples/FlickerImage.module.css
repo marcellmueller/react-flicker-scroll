@@ -1,0 +1,45 @@
+.container {
+  margin: 4em 1em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.flicker {
+  color: #495057;
+  font-size: 40px;
+  font-family: sans-serif;
+  color: grey;
+}
+
+.image {
+  position: relative;
+  grid-row: 2;
+  padding-top: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .container {
+    margin: 4em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flicker {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .image {
+    padding-left: 3em;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  img {
+    max-width: 220px;
+  }
+}

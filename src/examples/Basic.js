@@ -13,7 +13,7 @@ const text = [
 
 const Basic = () => {
   return (
-    <div className={styles.container}>
+    <div>
       {text.map((line, i) => {
         return (
           <FlickerScroll

@@ -9,17 +9,11 @@
     "README.md"
   ],
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "srraf": "^3.2.1",
-    "web-vitals": "^2.1.4"
+    "srraf": "^3.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "clean": "rimraf dist",
     "publish": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files",
     "predeploy": "npm run build",

@@ -1,9 +1,6 @@
-.container {
+.flicker {
+  color: #495057;
   font-size: 40px;
   font-family: sans-serif;
   color: grey;
-}
-
-.flicker {
-  color: #495057;
 }

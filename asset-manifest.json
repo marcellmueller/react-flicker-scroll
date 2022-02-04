@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-flicker-scroll/static/css/main.71da9099.css",
+    "main.js": "/react-flicker-scroll/static/js/main.376bb14d.js",
+    "index.html": "/react-flicker-scroll/index.html",
+    "main.71da9099.css.map": "/react-flicker-scroll/static/css/main.71da9099.css.map",
+    "main.376bb14d.js.map": "/react-flicker-scroll/static/js/main.376bb14d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71da9099.css",
+    "static/js/main.376bb14d.js"
+  ]
+}

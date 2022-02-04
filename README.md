@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# React Flicker Scroll
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React component that detects when it is in the center of the viewport and can change styling while centered.
 
-## Available Scripts
+**Demo:**
+https://marcellmueller.github.io/react-flicker-scroll/
 
-In the project directory, you can run:
+### Installation
 
-### `npm start`
+```
+npm i react-flicker-scroll
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+or
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+yarn add react-flicker-scroll
+```
 
-### `npm test`
+### Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Use the `FlickerScroll` component to wrap your content. Active styles can be customized by using the `activeStyles` prop as shown.
 
-### `npm run build`
+You can technically put any type children inside the `FlickerScroll` component though only the basic `activeStyles` css is supported.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`onFlickerOn` and `onFlickerOff` props take a function that runs as the component scroll in and out of the center of the viewport.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```javascript
+import { FlickerScroll } from '../components';
+import styles from './Basic.module.css';
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+const text = [
+  'React',
+  'Flicker',
+  'Scroll',
+  'package',
+  'by',
+  'Marcel',
+  'Mueller',
+];
 
-### `npm run eject`
+const Basic = () => {
+  return (
+    <div className={styles.container}>
+      {text.map((line, i) => {
+        return (
+          <FlickerScroll
+            key={i}
+            activeStyles={{
+              color: 'red',
+            }}
+            className={styles.flicker}
+            onFlickerOn={() => console.log('flicker on')}
+            onFlickerOff={() => console.log('flicker off')}
+          >
+            {line}
+          </FlickerScroll>
+        );
+      })}
+    </div>
+  );
+};
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+export default Basic;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+export default Example;
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Dependencies
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+srraf to monitor scrolling
+https://github.com/estrattonbailey/srraf

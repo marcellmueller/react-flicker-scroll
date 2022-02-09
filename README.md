@@ -26,7 +26,7 @@ You can technically put any type children inside the `FlickerScroll` component t
 `stayActive` prop accepts a boolean value and will keep the active state regardless of scroll position when true.
 
 ```javascript
-import { FlickerScroll } from '../components';
+import { FlickerScroll } from 'react-flicker-scroll';
 import styles from './Basic.module.css';
 
 const text = [
